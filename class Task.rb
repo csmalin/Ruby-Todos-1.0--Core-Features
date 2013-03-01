@@ -14,7 +14,6 @@ class Task
   end
    
 
-
   def complete
     @completed_at = Time.now
   end
@@ -23,9 +22,12 @@ class Task
     @completed_at != nil
   end
 
-
+  def to_s
+    "#{@description}"
+  end
 
 end
+
 
 
 my_task = Task.new([1, {"description"=>"move with Lil", "completed_at"=>nil, "created_at"=>nil}])
