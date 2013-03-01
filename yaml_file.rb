@@ -1,19 +1,11 @@
 require 'yaml'
 
 class YamlFile
-  def initialize
-    @file = YAML.load(File.open('todo_list.yml'))
-    @file.each {|x| puts x.inspect} 
+  def self.open
+    file = YAML.load(File.open('todo_list.yml'))
   end
 
-  def open
-    @file
+  def self.save(list)
+    File::open('todo_list1.yml', 'w'){|f| YAML.dump(list, f)}
   end
-
-  def save
-    
-  end
-
 end
-
-test = Todo.new()
