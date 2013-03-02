@@ -1,5 +1,7 @@
-
+require './yaml_file.rb'
 class List
+  include YamlFile
+  
   attr_reader :tasks
   def initialize
    @tasks = []  
