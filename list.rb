@@ -28,7 +28,7 @@ class List
   end
 
   def remove(id)
-    @tasks.delete_at(id-1)
+    @tasks.delete_at(id)
   end
 
   def save_yaml

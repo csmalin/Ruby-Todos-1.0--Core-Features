@@ -1,5 +1,5 @@
 require_relative 'list'
-
+ARRAY_OFFSET = 1
 class TodoList
 
 
@@ -25,16 +25,18 @@ class TodoList
   end
 
   def remove
-    @list.remove(ARGV[1].to_i)
+    @list.remove(ARGV[1].to_i - ARRAY_OFFSET)
   end
 
   def complete
+    @list.tasks[ARGV[1].to_i - ARRAY_OFFSET].complete
   end
 
-
-
   def help
-    puts "Options(add, remove, list, complete"
+    puts "***************************"
+    puts "*        Options          *"
+    puts "***************************"
+    puts "add 'description of task'\ncomplete <id>\nremove <id>\nlist"
   end
 end
 
