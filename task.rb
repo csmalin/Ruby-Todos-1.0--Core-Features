@@ -9,7 +9,7 @@ class Task
   def initialize(args)
     @id = args[ID]
     @description  = args[TASK]["description"]
-    @completed_at = args[TASK]["completed_at"]
+    @completed_at = args[TASK]["completed_at"] || "nil"
     @created_at   = Time.now
   end
    
@@ -19,12 +19,12 @@ class Task
   end
 
   def completed?
-    @completed_at != nil
+    @completed_at != "nil" 
   end
 
   def to_s
     
-    "#{completed? ? '[x]' : '[ ]'} #{@id}: #{@description}"
+     "#{completed? ? '[x]' : '[ ]'} #{@id}: #{@description}"
   end
 
 end

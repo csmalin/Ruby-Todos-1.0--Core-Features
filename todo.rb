@@ -2,32 +2,36 @@ require_relative 'list'
 
 class TodoList
 
+
   def initialize
+    @list = List.new
     choice
+    @list.save_yaml
   end
 
   def choice
     case ARGV[0].downcase
     when "add" then add
     when "remove" then remove
-    when "list" then list
+    when "list" then puts @list.tasks
     when "complete" then complete
     else help
     end
   end
 
   def add
-    p ARGV[1..-1].join(" ")
+    @list.from_user(ARGV[1..-1].join(" "))
+    puts @list.tasks
   end
 
   def remove
+    @list.remove(ARGV[1].to_i)
   end
 
   def complete
   end
 
-  def list
-  end
+
 
   def help
     puts "Options(add, remove, list, complete"
@@ -37,3 +41,4 @@ end
 
 
 TodoList.new
+
