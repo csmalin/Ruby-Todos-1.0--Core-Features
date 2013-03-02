@@ -1,7 +1,7 @@
 require_relative 'list'
 ARRAY_OFFSET = 1
-class TodoList
 
+class TodoList
 
   def initialize
     @list = List.new
@@ -39,8 +39,6 @@ class TodoList
     puts "add 'description of task'\ncomplete <id>\nremove <id>\nlist"
   end
 end
-
-
 
 TodoList.new
 

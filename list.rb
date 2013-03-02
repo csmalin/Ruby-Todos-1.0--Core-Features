@@ -7,8 +7,8 @@ class List
   attr_reader :tasks
 
   def initialize
-   @tasks = []  
-   from_yaml(read)
+    @tasks = []  
+    from_yaml(read)
   end
 
   def from_yaml(file)
@@ -17,10 +17,10 @@ class List
     end
   end
    
-   def from_user(task)
-       user_task = [(@tasks.length + 1),{"description"=>task}]
-      add(Task.new(user_task))
-   end
+  def from_user(task)
+    user_task = [(@tasks.length + 1),{"description"=>task}]
+    add(Task.new(user_task))
+  end
 
 
   def add(task)

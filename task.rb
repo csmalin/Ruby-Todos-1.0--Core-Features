@@ -23,8 +23,7 @@ class Task
   end
 
   def to_s
-    
-     "#{completed? ? '[x]' : '[ ]'} #{@id}: #{@description}"
+    "#{completed? ? '[x]' : '[ ]'} #{@id}: #{@description}"
   end
 
 end
