@@ -6,7 +6,7 @@ module YamlFile
   end
 
   def save(list)
-    File::open('todo_list1.yml', 'w'){|f| YAML.dump(list, f)}
+    File::open('todo_list.yml', 'w'){|f| YAML.dump(list, f)}
   end
 end
 
