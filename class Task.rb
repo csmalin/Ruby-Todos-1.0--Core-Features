@@ -23,10 +23,13 @@ class Task
   end
 
   def to_s
-    "#{@description}"
+    
+    "#{completed? ? '[x]' : '[ ]'} #{@id}: #{@description}"
   end
 
 end
+
+# []1 description
 
 
 
@@ -36,5 +39,7 @@ p my_task.completed_at
 p my_task.created_at
 p my_task.id
 p my_task.completed?
+puts my_task
 p my_task.complete
 p my_task.completed?
+puts my_task
