@@ -23,18 +23,8 @@ class Task
   end
 
   def to_s
-    "#{@description}"
+    
+    "#{completed? ? '[x]' : '[ ]'} #{@id}: #{@description}"
   end
 
 end
-
-
-
-# my_task = Task.new([1, {"description"=>"move with Lil", "completed_at"=>nil, "created_at"=>nil}])
-# p my_task.description
-# p my_task.completed_at
-# p my_task.created_at
-# p my_task.id
-# p my_task.completed?
-# p my_task.complete
-# p my_task.completed?
