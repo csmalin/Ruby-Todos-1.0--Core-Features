@@ -5,19 +5,15 @@ class TodoList
 
   def initialize
     @list = List.new
-    choice    
+    begin
+      self.send ARGV[0]
+      rescue help
+    end
     @list.save_yaml
   end
 
-  def choice
-    case ARGV[0].downcase
-    when "add" then add
-    when "remove" then remove
-    when "complete" then complete
-    when "uncomplete" then uncomplete
-    when "list"  then puts @list.tasks
-    else help
-    end
+  def list
+    puts @list.tasks
   end
 
   def add
