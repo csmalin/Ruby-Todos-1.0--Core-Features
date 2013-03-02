@@ -2,40 +2,40 @@
 - id: 1
   description: Move with Lil to the black mountain hills of Dakota
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441335000 -08:00
+  created_at: 2013-03-02 12:52:32.288362000 -08:00
 - id: 2
   description: Lose Lil to Danny
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441339000 -08:00
+  created_at: 2013-03-02 12:52:32.288367000 -08:00
 - id: 3
   description: Get hit in the eye by Danny
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441342000 -08:00
+  created_at: 2013-03-02 12:52:32.288370000 -08:00
 - id: 4
   description: Walk into town seeking revenge
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441344000 -08:00
+  created_at: 2013-03-02 12:52:32.288373000 -08:00
 - id: 5
   description: Book room at local saloon
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441347000 -08:00
+  created_at: 2013-03-02 12:52:32.288375000 -08:00
 - id: 6
   description: Check into room, read Gideon's bible
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441349000 -08:00
+  created_at: 2013-03-02 12:52:32.288378000 -08:00
 - id: 7
   description: Get shot by Danny and collapse in corner
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441351000 -08:00
+  created_at: 2013-03-02 12:52:32.288380000 -08:00
 - id: 8
   description: Visit doctor
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441352000 -08:00
+  created_at: 2013-03-02 12:52:32.288382000 -08:00
 - id: 9
   description: Return to room, read Gideon's bible
   completed_at: 
-  created_at: 2013-03-01 21:21:55.441354000 -08:00
+  created_at: 2013-03-02 12:52:32.288384000 -08:00
 - id: 10
   description: Sing along! "D'do d'do d'do do do d'do d'do d'do"
-  completed_at: 
-  created_at: 2013-03-01 21:21:55.441356000 -08:00
+  completed_at: 2013-03-02 12:52:28.793007000 -08:00
+  created_at: 2013-03-02 12:52:32.288386000 -08:00
